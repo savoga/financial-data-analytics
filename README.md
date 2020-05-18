@@ -44,8 +44,30 @@ I focus on the target field that represents the loan status. From the data provi
 - 'C' stands for running contract, OK so far,
 - 'D' stands for running contract, client in debt
 
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/status-repartition.png"></img></p>
+
+Most clients have a running contract that is OK so far.
+
+Among the sample, 7+5=12% of the loans are missing a payment.
 
 ### Feature engineering
+
+In order to predict whether a loan will be paid or not in a relevant manner, I choose to focus on the following features that will be included in my model:
+
+- date when the loan was granted
+- amount of money
+- duration of the loan
+- type of card
+
+Status of paying off the loan will be used as the value to predict.
+
+In this section I focus on operation to prepare the data for machine learning algorithms, that is:
+
+- join
+- conversion: I convert status (string) to integer
+- standardization: used to make sure all variables contribute equally
+
+### Data visualization
 
 ### Multiclass approach
 
