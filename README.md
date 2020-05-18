@@ -69,6 +69,17 @@ In this section I focus on operation to prepare the data for machine learning al
 
 ### Data visualization
 
+Grouping the data by type, I could show 3 dimensions: type of customer, loan amount and loan status.
+
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/status_type.png"></img></p>
+
+--> most of the clients who cannot paid their loans do not have a card
+--> a large proportion of contracts that finished without any issue are for lower amounts
+--> no junior client are in debt for paying a contract
+
+Although this graph implies that using the type is a relevant feature, the next will draw the opposite conclusion.
+
+
 ### Multiclass approach
 
 ### Binary approach
