@@ -4,7 +4,7 @@ I've initially done this project for an interview. I then reviewed it and pushed
 
 ## Context
 
-I used <a href="https://spark.apache.org/">spark framework</a> in order to easily perform computation on datasets. Altough better adapted for larger datasets, the use of the framework was a requirement for this exercise.
+I used <a href="https://spark.apache.org/">spark framework</a> in order to easily perform computation on datasets. Altough better adapted for larger datasets, the use of the framework was a requirement for this exercise. I used a <a href="https://hub.docker.com/r/jupyter/all-spark-notebook/">docker container</a> that contains all the needed libraries (Spark, Jupyter, etc).
 
 Based on a public dataset named <a href="https://sorry.vse.cz/~berka/challenge/pkdd1999/berka.htm">PKDD'99</a>, I first run basic analysis to understand better transactions and loan amounts.
 
