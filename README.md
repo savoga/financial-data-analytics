@@ -1,6 +1,6 @@
 # Financial data analytics
 
-I've initially done this project for an interview. I then wanted to review it and push the analysis further.
+I've initially done this project for an interview. I then reviewed it and pushed the analysis further.
 
 ## Context
 
