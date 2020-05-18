@@ -73,7 +73,7 @@ Grouping the data by type, I could show 3 dimensions: type of customer, loan amo
 
 <p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/amount_type.png"></img></p>
 
---> most of the clients who cannot paid their loans do not have a card
+--> most of the clients who cannot pay their loans do not have a card
 
 --> a large proportion of contracts that finished without any issue are for lower amounts
 
@@ -105,7 +105,7 @@ Using binary classification gives a strongly better score of 96%.
 
 The decision tree is a simple algorithm for non linear relations. It gives an accuracy score of 85% in multiclass approach and roughly 60% in binary.
 
-The tree depth is 15, which already too high to give a good interpretability:
+The tree depth is 15, which is already too high to give a good interpretability:
 
 <p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/tree.png"></img></p>
 
