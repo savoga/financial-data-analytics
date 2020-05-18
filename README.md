@@ -124,3 +124,14 @@ KNN algorithm gives high score in binary and multiclass approach. As seen previo
 <p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/ROC.png"></img></p>
 
 ### Conclusion
+
+With binary approach, those predictions can lead to 2 types of errors:
+
+- False positive: the model wrongly predicted that the client will pay its loan
+- False negative: the model wrongly predicted that the client won't pay its loan
+
+A bank would probably want to make sure the loans are indeed paid. They will thus be in favor of an algorithm that minize the first error (low false positive).
+
+Thus, AdaBoost seems the best algorithm.
+
+Limits: explainability, computational time with more data. 
