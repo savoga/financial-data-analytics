@@ -74,7 +74,9 @@ Grouping the data by type, I could show 3 dimensions: type of customer, loan amo
 <p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/amount_type.png"></img></p>
 
 --> most of the clients who cannot paid their loans do not have a card
+
 --> a large proportion of contracts that finished without any issue are for lower amounts
+
 --> no junior client are in debt for paying a contract
 
 Although this graph implies that using the type is a relevant feature, the next will draw the opposite conclusion.
@@ -87,14 +89,38 @@ Based on this graph we can see that the data are largely clusterizable.
 
 ### Prediction
 
+I perform the prediction firstly using a multiclass approach, that is predicting A, B, C or D as the loan status. I then do a binary prediction, that is if the loan is paid (A, B, C) or not (D).
+
 #### Linear regression
+
+I choose to start with one of the easiest algorithm; it's also the model I know the best so I am able to better extract information of it.
+
+From the OLS results, we can see that the relationship is highly significant globally since p-value associated with Fisher stat is very low. All variables are significant with date and duration being the most important factors. Type is actually not that important (contrary to what we expected in previous part).
+
+Linear regression gives an accuracy score of 60%. Running a cross validation shows that the variance is high.
+
+Using binary classification gives a strongly better score of 96%.
 
 #### Decision tree
 
+The decision tree is a simple algorithm for non linear relations. It gives an accuracy score of 85% in multiclass approach and roughly 60% in binary.
+
+The tree depth is 15, which already too high to give a good interpretability:
+
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/tree.png"></img></p>
+
 #### AdaBoost
+
+AdaBoost is an algorithm belonging to boosting methods; it may be well adapted with such few data as we won't be penalised by the computational time.
+
+It gives 69% in multiclass and roughly 80% in binary after conducting a grid search.
 
 #### KNN
 
+KNN algorithm gives high score in binary and multiclass approach. As seen previously, clustering methods seem a good option for this problem.
+
 ### Model selection
+
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/ROC.png"></img></p>
 
 ### Conclusion
