@@ -1,2 +1,21 @@
-# credit-risk-prediction
-Credit risk prediction using public financial dataset
+# Credit risk prediction
+
+## Context
+
+## Preprocessing
+
+## Analytics
+
+## Credit risk prediction
+
+### Basic analysis
+
+### Feature engineering
+
+### Multiclass approach
+
+### Binary approach
+
+### Model selection
+
+### Conclusion
