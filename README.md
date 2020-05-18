@@ -71,7 +71,7 @@ In this section I focus on operation to prepare the data for machine learning al
 
 Grouping the data by type, I could show 3 dimensions: type of customer, loan amount and loan status.
 
-<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/status_type.png"></img></p>
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/amount_type.png"></img></p>
 
 --> most of the clients who cannot paid their loans do not have a card
 --> a large proportion of contracts that finished without any issue are for lower amounts
@@ -79,10 +79,21 @@ Grouping the data by type, I could show 3 dimensions: type of customer, loan amo
 
 Although this graph implies that using the type is a relevant feature, the next will draw the opposite conclusion.
 
+Using the PCA, we can reduce the data to 2 dimensions only (explaining 72% of the variance) and plot them:
 
-### Multiclass approach
+<p align="center"><img src="https://github.com/savoga/financial-data-analytics/blob/master/img/pca.png"></img></p>
 
-### Binary approach
+Based on this graph we can see that the data are largely clusterizable.
+
+### Prediction
+
+#### Linear regression
+
+#### Decision tree
+
+#### AdaBoost
+
+#### KNN
 
 ### Model selection
 
